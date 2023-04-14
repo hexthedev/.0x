@@ -1,0 +1,68 @@
+""" Map leader to space ---------------------
+let mapleader=" "
+
+set clipboard+=unnamed
+set easymotion
+
+""" Keys Used a d f g h i j k l n o p r t u v x y $ { } /
+""" Windows --------------------------------
+map <leader>ww <Action>(Switcher)
+map <leader>we <Action>(ActivateProjectToolWindow)
+map <leader>wd <Action>(ActivateDebugToolWindow)
+map <leader>ws <Action>(ActivateStructureToolWindow)
+map <leader>wt <Action>(ActivateTerminalToolWindow)
+map <leader>wb <Action>(ViewBreakpoints)
+
+map <leader>dC <Action>(editRunConfigurations)
+map <leader>dc <Action>(RunConfiguration)
+map <leader>dr <Action>(Resume)
+map <leader>ds <Action>(Stop)
+map <leader>dp <Action>(Run)
+map <leader>dd <Action>(Debug)
+map <leader>di <Action>(NavigateToImmediateWindow)
+
+map <leader>xv <Action>(ExtractVariable)
+map <leader>xc <Action>(ExtractConstant)
+map <leader>xf <Action>(ExtractField)
+map <leader>xp <Action>(ExtractParameter)
+map <leader>xm <Action>(ExtractMethod)
+map <leader>xi <Action>(ExtractInterface)
+map <leader>xs <Action>(ExtractSuperclass)
+
+map <leader>as <Action>(SelectIn)
+map <leader>ad <Action>(GotoDeclaration)
+map <leader>ai <Action>(GotoImplementation)
+map <leader>au <Action>(FindUsages)
+map <leader>ar <Action>(GotoRelated)
+map <leader>ap <Action>(RdExposingApiesNavigationAction)
+map <leader>ac <Action>(RdConsumingApiesNavigationAction)
+map <leader>aw <Action>(RevealIn)
+
+:echo &ide
+if &ide =~? 'rider'
+  map <leader>e <Action>(ReSharperGotoNextErrorInSolution)
+  map <leader>E <Action>(ReSharperGotoPreviousErrorInSolution)
+elseif &ide =~? 'webstorm'
+  map <leader>e <Action>(GotoNextError)
+  map <leader>E <Action>(GotoPreviousError)
+endif
+
+map m <Action>(MethodDown)
+map M <Action>(MethodUp)
+
+map <leader>q <Action>(CloseContent)
+
+map <leader>[ <Action>(CollapseRegion)
+map <leader>] <Action>(ExpandRegion)
+
+map <leader>b <Action>(ToggleLineBreakpoint)
+map <leader>B <Action>(EditBreakpoint)
+
+map <leader>f <Action>(Find) 
+map <leader>F <Action>(FindInPath)
+
+map <leader>h <Action>(Replace)
+map <leader>H <Action>(ReplaceInPath)
+
+map <leader>p <Action>(NextDiff)
+map <leader>P <Action>(PreviousDiff)
