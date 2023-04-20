@@ -1,6 +1,12 @@
-""" Map leader to space ---------------------
-let mapleader=" "
+""" source isn't working but it should be able to pull from the vimrc. I recopied underneth whats in the vimrc to maintain functionality
+source %USERPROFILE%\.vimrc
 
+let mapleader = " "
+
+map <leader>j ^
+map <leader>k g_
+
+""" Map leader to space ---------------------
 set clipboard+=unnamed
 set easymotion
 
