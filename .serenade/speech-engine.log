@@ -1,0 +1,8 @@
+LOG ([5.5.1007~13-3ec10]:ComputeDerivedVars():ivector-extractor.cc:183) Computing derived variables for iVector extractor
+LOG ([5.5.1007~13-3ec10]:ComputeDerivedVars():ivector-extractor.cc:204) Done.
+LOG ([5.5.1007~13-3ec10]:RemoveOrphanNodes():nnet-nnet.cc:948) Removed 1 orphan nodes.
+LOG ([5.5.1007~13-3ec10]:RemoveOrphanComponents():nnet-nnet.cc:847) Removing 2 orphan components.
+LOG ([5.5.1007~13-3ec10]:Collapse():nnet-utils.cc:1488) Added 1 components, removed 2
+LOG ([5.5.1007~13-3ec10]:CompileLooped():nnet-compile-looped.cc:345) Spent 0.062829 seconds in looped compilation.
+WARNING ([5.5.1007~13-3ec10]:Iterate():push-special.cc:182) push-special: finished 200 iterations without converging.  Output will be inaccurate.
+LOG ([5.5.1007~13-3ec10]:Prepare():grammar-fst.cc:584) Added 3 new states while preparing for grammar FST.

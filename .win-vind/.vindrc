@@ -1,8 +1,5 @@
-" Write to your .vindrc.
 set initmode = r
 
-noremap f <easy_click_left>
-noremap <shift-f> <easy_click_right>
-noremap <alt-f> <easy_click_hover>
-
-noremap <alt-v> <to_resident>
+rnoremap <rctrl><rctrl> <easy_click_left>
+rnoremap <rshift><rshift> <easy_click_right>
+rnoremap <ralt><ralt> <easy_click_hover>

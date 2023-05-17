@@ -3,6 +3,14 @@ source %USERPROFILE%\.vimrc
 
 let mapleader = " "
 
+
+noremap h <Nop>
+noremap j <Nop>
+noremap k <Nop>
+noremap l <Nop>
+
+
+
 map <leader>j ^
 map <leader>k g_
 
@@ -43,6 +51,7 @@ map <leader>ar <Action>(GotoRelated)
 map <leader>ap <Action>(RdExposingApiesNavigationAction)
 map <leader>ac <Action>(RdConsumingApiesNavigationAction)
 map <leader>aw <Action>(RevealIn)
+map <leader>aa <Action>(ShowIntentionActions)
 
 :echo &ide
 if &ide =~? 'rider'
@@ -72,3 +81,4 @@ map <leader>H <Action>(ReplaceInPath)
 
 map <leader>p <Action>(NextDiff)
 map <leader>P <Action>(PreviousDiff)
+
