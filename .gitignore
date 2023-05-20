@@ -50,3 +50,14 @@ go/
 .win-vind/log
 IntelGraphicsProfiles
 NativeWebSocket
+itk
+.alfabis
+.azurefunctions
+.AzureToolsForIntelliJ
+.cloudflared
+.designer
+.librarymanager
+.matplotlib
+.openai
+.redhat
+source
