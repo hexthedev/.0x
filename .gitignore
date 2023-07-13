@@ -51,9 +51,17 @@ go/
 IntelGraphicsProfiles
 NativeWebSocket
 yarn.lock
+itk
+.alfabis
+.azurefunctions
 set
 Twins
 openapitools.json
+.AzureToolsForIntelliJ
+.cloudflared
+.designer
+.librarymanager
+.matplotlib
 ntuser.ini
 *.regtrans-ms
 *.blf
@@ -63,6 +71,3 @@ ntuser.ini
 Kit
 java_error_in_webstorm64.hprof
 java_error_in_rider64.hprof
-.npmrc
-.umbrella
-.yarnrc
