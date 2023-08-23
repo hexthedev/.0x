@@ -17,26 +17,26 @@
   </action>
   <action id="AceAction" />
   <action id="AceLineAction">
-    <keyboard-shortcut first-keystroke="ctrl a" second-keystroke="m" />
+    <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="m" />
   </action>
   <action id="AceLineEndsAction">
-    <keyboard-shortcut first-keystroke="ctrl a" second-keystroke="shift l" />
+    <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="shift l" />
   </action>
   <action id="AceLineIndentsAction">
-    <keyboard-shortcut first-keystroke="ctrl a" second-keystroke="i" />
+    <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="i" />
   </action>
   <action id="AceLineStartsAction">
-    <keyboard-shortcut first-keystroke="ctrl a" second-keystroke="l" />
+    <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="l" />
   </action>
   <action id="AceTargetAction" />
   <action id="AceWordAction">
-    <keyboard-shortcut first-keystroke="ctrl a" second-keystroke="j" />
-  </action>
-  <action id="AceWordStartAction">
-    <keyboard-shortcut first-keystroke="ctrl a" second-keystroke="h" />
+    <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="w" />
   </action>
   <action id="ActivateBookmarksToolWindow">
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="b" />
+  </action>
+  <action id="ActivateBuildToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="u" />
   </action>
   <action id="ActivateCommitToolWindow" />
   <action id="ActivateDebugToolWindow">
@@ -95,10 +95,13 @@
   <action id="CloseContent">
     <keyboard-shortcut first-keystroke="ctrl q" second-keystroke="q" />
   </action>
-  <action id="CodeCleanup">
-    <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="shift f" />
+  <action id="CollapseAllRegions">
+    <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="shift c" />
   </action>
   <action id="CollapseBlock" />
+  <action id="CollapseRegion">
+    <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="c" />
+  </action>
   <action id="CollapseRegionRecursively" />
   <action id="CommentByBlockComment" />
   <action id="CommentByLineComment">
@@ -116,15 +119,16 @@
     <keyboard-shortcut first-keystroke="shift delete" />
   </action>
   <action id="Debug" />
+  <action id="Documentation.ViewExternal" />
   <action id="DomCollectionControl.Add">
     <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="a" />
   </action>
   <action id="DumpMLCompletionFeatures" />
   <action id="EditBookmark">
-    <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="r" />
+    <keyboard-shortcut first-keystroke="ctrl a" second-keystroke="r" />
   </action>
   <action id="EditBreakpoint">
-    <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="shift b" />
+    <keyboard-shortcut first-keystroke="ctrl a" second-keystroke="e" />
   </action>
   <action id="EditSource" />
   <action id="Editor Copy">
@@ -144,26 +148,9 @@
   <action id="EditorBackSpace">
     <keyboard-shortcut first-keystroke="back_space" />
   </action>
-  <action id="EditorBackwardParagraphWithSelection">
-    <keyboard-shortcut first-keystroke="ctrl s" second-keystroke="shift p" />
-  </action>
+  <action id="EditorChooseLookupItemCompleteStatement" />
   <action id="EditorCloneCaretAbove" />
   <action id="EditorCloneCaretBelow" />
-  <action id="EditorCodeBlockEnd">
-    <keyboard-shortcut first-keystroke="ctrl m" second-keystroke="b" />
-  </action>
-  <action id="EditorCodeBlockEndWithSelection">
-    <keyboard-shortcut first-keystroke="ctrl s" second-keystroke="b" />
-  </action>
-  <action id="EditorCodeBlockStart">
-    <keyboard-shortcut first-keystroke="ctrl m" second-keystroke="shift b" />
-  </action>
-  <action id="EditorCodeBlockStartWithSelection">
-    <keyboard-shortcut first-keystroke="ctrl s" second-keystroke="shift b" />
-  </action>
-  <action id="EditorCompleteStatement">
-    <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="c" />
-  </action>
   <action id="EditorContextInfo">
     <keyboard-shortcut first-keystroke="ctrl s" second-keystroke="c" />
   </action>
@@ -180,25 +167,16 @@
   <action id="EditorDeleteLine">
     <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="l" />
   </action>
-  <action id="EditorDeleteToLineEnd">
-    <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="k" />
-  </action>
-  <action id="EditorDeleteToLineStart">
-    <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="j" />
-  </action>
   <action id="EditorDeleteToWordEnd">
     <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="w" />
   </action>
   <action id="EditorDeleteToWordStart" />
   <action id="EditorDuplicate" />
   <action id="EditorFocusGutter" />
-  <action id="EditorForwardParagraphWithSelection">
-    <keyboard-shortcut first-keystroke="ctrl s" second-keystroke="p" />
-  </action>
   <action id="EditorIncreaseFontSize" />
   <action id="EditorIncreaseFontSizeGlobal" />
   <action id="EditorIndentLineOrSelection">
-    <keyboard-shortcut first-keystroke="ctrl l" />
+    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="i" />
   </action>
   <action id="EditorJoinLines" />
   <action id="EditorMatchBrace" />
@@ -250,10 +228,13 @@
   </action>
   <action id="EmmetNextEditPoint" />
   <action id="EmmetPreviousEditPoint" />
-  <action id="ExpandRegionRecursively" />
-  <action id="ExtractInterface">
-    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="i" />
+  <action id="ExpandAllRegions">
+    <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="shift e" />
   </action>
+  <action id="ExpandRegion">
+    <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="e" />
+  </action>
+  <action id="ExpandRegionRecursively" />
   <action id="ExtractMethod">
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="m" />
   </action>
@@ -282,12 +263,18 @@
   <action id="FindUsagesInFile">
     <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="f" />
   </action>
-  <action id="ForceRunToCursor" />
+  <action id="ForceRunToCursor">
+    <keyboard-shortcut first-keystroke="shift f1" />
+  </action>
   <action id="ForceStepInto" />
+  <action id="ForceStepOver">
+    <keyboard-shortcut first-keystroke="shift f3" />
+  </action>
   <action id="Generate">
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="g" />
   </action>
   <action id="Git.Rename.Local.Branch" />
+  <action id="Git.Reword.Commit" />
   <action id="GotoAction">
     <keyboard-shortcut first-keystroke="ctrl g" second-keystroke="a" />
   </action>
@@ -326,22 +313,19 @@
     <keyboard-shortcut first-keystroke="ctrl g" second-keystroke="t" />
   </action>
   <action id="GotoUrlAction" />
+  <action id="Graph.RouteEdges" />
   <action id="Help.KeymapReference" />
   <action id="HideActiveWindow" />
   <action id="HideSideWindows" />
   <action id="HighlightUsagesInFile" />
   <action id="Images.Thumbnails.Hide" />
   <action id="Inline" />
-  <action id="InspectThis">
-    <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="i" />
-  </action>
+  <action id="InspectThis" />
   <action id="IntroduceConstant">
     <keyboard-shortcut first-keystroke="ctrl alt c" />
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="c" />
   </action>
-  <action id="IntroduceField">
-    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="f" />
-  </action>
+  <action id="IntroduceField" />
   <action id="IntroduceParameter" />
   <action id="IntroduceVariable">
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="v" />
@@ -401,12 +385,13 @@
   <action id="ReSharperGotoNextErrorInSolution" />
   <action id="ReSharperGotoPrevErrorInSolution" />
   <action id="ReSharperNavigateTo" />
+  <action id="RecentFiles" />
   <action id="RecentProjectListGroup" />
   <action id="Refactorings.QuickListPopupAction">
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="r" />
   </action>
   <action id="ReformatCode">
-    <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="f" />
+    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="f" />
   </action>
   <action id="RenameElement">
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="n" />
@@ -417,20 +402,23 @@
   <action id="ReplaceInPath">
     <keyboard-shortcut first-keystroke="ctrl f" second-keystroke="shift h" />
   </action>
+  <action id="Rerun">
+    <keyboard-shortcut first-keystroke="shift f6" />
+  </action>
   <action id="Resume">
-    <keyboard-shortcut first-keystroke="ctrl f4" />
+    <keyboard-shortcut first-keystroke="f4" />
   </action>
   <action id="RevealIn">
     <keyboard-shortcut first-keystroke="ctrl f" second-keystroke="e" />
   </action>
   <action id="RiderBackendAction-ExtractClass">
     <keyboard-shortcut first-keystroke="ctrl x" second-keystroke="c" />
-    <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="c" />
   </action>
   <action id="RiderCoveringTestsPopupDebugSelectedTestsAction" />
   <action id="RiderCoveringTestsPopupRunAllTestsAction" />
   <action id="RiderCoveringTestsPopupRunSelectedTestsAction" />
   <action id="RiderNuGetToggleDependenciesExpanderAction" />
+  <action id="RiderProjectDiagramApplyCurrentLayout" />
   <action id="RiderReattach" />
   <action id="RiderRemoveAllLineBreakpoints" />
   <action id="RiderUnitTestDebugContextTwAction" />
@@ -441,7 +429,9 @@
   <action id="RiderUnitTestRunSolutionTwAction" />
   <action id="Run" />
   <action id="RunDashboard.CopyConfiguration" />
-  <action id="RunToCursor" />
+  <action id="RunToCursor">
+    <keyboard-shortcut first-keystroke="f1" />
+  </action>
   <action id="SafeDelete" />
   <action id="SaveDocument" />
   <action id="SchemaCompare.SaveScmpFile" />
@@ -470,29 +460,33 @@
   </action>
   <action id="ShowSettingsAndFindUsages" />
   <action id="ShowUsages" />
-  <action id="SmartStepInto" />
+  <action id="SmartStepInto">
+    <keyboard-shortcut first-keystroke="f2" />
+  </action>
   <action id="SmartUnSelect" />
   <action id="SplitChooser.PreviousWindow" />
   <action id="SplitVertically" />
-  <action id="StepInto">
-    <keyboard-shortcut first-keystroke="ctrl f2" />
-  </action>
+  <action id="StepInto" />
   <action id="StepOut">
-    <keyboard-shortcut first-keystroke="ctrl f3" />
+    <keyboard-shortcut first-keystroke="f5" />
   </action>
   <action id="StepOver">
-    <keyboard-shortcut first-keystroke="ctrl f1" />
+    <keyboard-shortcut first-keystroke="f3" />
   </action>
   <action id="Stop">
-    <keyboard-shortcut first-keystroke="ctrl f5" />
+    <keyboard-shortcut first-keystroke="f6" />
   </action>
   <action id="StopBackgroundProcesses" />
+  <action id="SurroundWith" />
   <action id="SwitchCoverage" />
   <action id="SwitchHeaderSource" />
+  <action id="SwitcherIterateItems" />
+  <action id="SwitcherRecentEditedChangedToggleCheckBox" />
   <action id="TFFmtFileAction" />
   <action id="TW.MoveToGroup">
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="m" />
   </action>
+  <action id="Table-startEditing" />
   <action id="TableResult.ShrinkSelection" />
   <action id="Terminal.ClearBuffer" />
   <action id="Terminal.CloseTab" />
@@ -511,17 +505,22 @@
   <action id="Terminal.SplitVertically" />
   <action id="TextSearchAction" />
   <action id="ToggleBookmark">
-    <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="b" />
+    <keyboard-shortcut first-keystroke="ctrl a" second-keystroke="b" />
+  </action>
+  <action id="ToggleBookmarkWithMnemonic">
+    <keyboard-shortcut first-keystroke="ctrl a" second-keystroke="m" />
   </action>
   <action id="ToggleFindInSelection" />
   <action id="ToggleLineBreakpoint">
-    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="b" />
+    <keyboard-shortcut first-keystroke="ctrl a" second-keystroke="l" />
   </action>
   <action id="ToggleTemporaryLineBreakpoint" />
+  <action id="Tree-startEditing" />
   <action id="TypeHierarchy">
     <keyboard-shortcut first-keystroke="ctrl h" second-keystroke="t" />
   </action>
   <action id="UnselectPreviousOccurrence" />
+  <action id="Unwrap" />
   <action id="UpdateRunningApplication" />
   <action id="UsageFiltering.ReadAccess" />
   <action id="UsageFiltering.WriteAccess" />
