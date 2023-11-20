@@ -92,3 +92,6 @@ App
 .serenade/core.log
 .serenade/code-engine.log
 .serenade/scripts/work.js
+.affinity
+.cache
+unity-drive
