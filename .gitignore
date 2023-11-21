@@ -95,3 +95,8 @@ App
 .affinity
 .cache
 unity-drive
+.keras
+.openai
+.redhat
+source
+AMDRM_Install.log
