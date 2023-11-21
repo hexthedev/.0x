@@ -226,6 +226,84 @@
                     "m_Modifiers": 2
                 }
             ]
+        },
+        {
+            "identifier": {
+                "path": "Edit/Delete"
+            },
+            "combinations": [
+                {
+                    "m_KeyCode": 8,
+                    "m_Modifiers": 0
+                }
+            ]
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/Edit/Select Children"
+            },
+            "combinations": []
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/Window/Layouts/Scene"
+            },
+            "combinations": [
+                {
+                    "m_KeyCode": 99,
+                    "m_Modifiers": 4
+                }
+            ]
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/File/New Scene"
+            },
+            "combinations": []
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/GameObject/Create Empty"
+            },
+            "combinations": [
+                {
+                    "m_KeyCode": 110,
+                    "m_Modifiers": 2
+                }
+            ]
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/GameObject/Create Empty Child"
+            },
+            "combinations": [
+                {
+                    "m_KeyCode": 110,
+                    "m_Modifiers": 6
+                }
+            ]
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/GameObject/Create Empty Parent"
+            },
+            "combinations": [
+                {
+                    "m_KeyCode": 110,
+                    "m_Modifiers": 3
+                }
+            ]
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/Window/Layouts/UIBuilder"
+            },
+            "combinations": [
+                {
+                    "m_KeyCode": 105,
+                    "m_Modifiers": 4
+                }
+            ]
         }
     ]
 }
