@@ -304,6 +304,17 @@
                     "m_Modifiers": 4
                 }
             ]
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/Window/Layouts/Game"
+            },
+            "combinations": [
+                {
+                    "m_KeyCode": 103,
+                    "m_Modifiers": 4
+                }
+            ]
         }
     ]
 }
