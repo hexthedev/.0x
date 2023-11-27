@@ -315,6 +315,17 @@
                     "m_Modifiers": 4
                 }
             ]
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/Window/Layouts/Recording"
+            },
+            "combinations": [
+                {
+                    "m_KeyCode": 114,
+                    "m_Modifiers": 4
+                }
+            ]
         }
     ]
 }
