@@ -6,12 +6,7 @@
             "identifier": {
                 "path": "Scene View/Temporary FPS Tool"
             },
-            "combinations": [
-                {
-                    "m_KeyCode": 323,
-                    "m_Modifiers": 0
-                }
-            ]
+            "combinations": []
         },
         {
             "identifier": {
@@ -324,6 +319,90 @@
                 {
                     "m_KeyCode": 114,
                     "m_Modifiers": 4
+                }
+            ]
+        },
+        {
+            "identifier": {
+                "path": "Scene Picking/Toggle Picking On Selection And Descendants"
+            },
+            "combinations": []
+        },
+        {
+            "identifier": {
+                "path": "Sprite Editor/Trim"
+            },
+            "combinations": []
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/Window/Layouts/TestRunner"
+            },
+            "combinations": [
+                {
+                    "m_KeyCode": 116,
+                    "m_Modifiers": 4
+                }
+            ]
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/Ergonomics/SpaceMouse/Operation/Fly"
+            },
+            "combinations": [
+                {
+                    "m_KeyCode": 96,
+                    "m_Modifiers": 1
+                }
+            ]
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/Ergonomics/SpaceMouse/Operation/GrabMove"
+            },
+            "combinations": [
+                {
+                    "m_KeyCode": 54,
+                    "m_Modifiers": 5
+                }
+            ]
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/Ergonomics/SpaceMouse/Operation/Orbit"
+            },
+            "combinations": [
+                {
+                    "m_KeyCode": 96,
+                    "m_Modifiers": 5
+                }
+            ]
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/Ergonomics/SpaceMouse/Operation/Telekinesis"
+            },
+            "combinations": [
+                {
+                    "m_KeyCode": 92,
+                    "m_Modifiers": 1
+                }
+            ]
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/Edit/Selection/Load Selection 3"
+            },
+            "combinations": []
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/Ergonomics/SpaceMouse/Speed/Cycle"
+            },
+            "combinations": [
+                {
+                    "m_KeyCode": 51,
+                    "m_Modifiers": 6
                 }
             ]
         }
