@@ -405,6 +405,17 @@
                     "m_Modifiers": 6
                 }
             ]
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/Window/Layouts/Animation"
+            },
+            "combinations": [
+                {
+                    "m_KeyCode": 97,
+                    "m_Modifiers": 4
+                }
+            ]
         }
     ]
 }
