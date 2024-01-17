@@ -408,11 +408,11 @@
         },
         {
             "identifier": {
-                "path": "Main Menu/Window/Layouts/Animation"
+                "path": "Main Menu/Window/Layouts/BuildProfiles"
             },
             "combinations": [
                 {
-                    "m_KeyCode": 97,
+                    "m_KeyCode": 98,
                     "m_Modifiers": 4
                 }
             ]
