@@ -1616,5 +1616,15 @@
       "key": "ctrl+k f",
       "command": "-workbench.action.closeFolder",
       "when": "emptyWorkspaceSupport && workbenchState != 'empty'"
+    },
+    {
+      "key": "ctrl+z",
+      "command": "undo",
+      "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
+    },
+    {
+      "key": "z",
+      "command": "-undo",
+      "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
     }
   ]

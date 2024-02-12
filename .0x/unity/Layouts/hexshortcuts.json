@@ -416,6 +416,17 @@
                     "m_Modifiers": 4
                 }
             ]
+        },
+        {
+            "identifier": {
+                "path": "Main Menu/Window/Layouts/ProjectSettings"
+            },
+            "combinations": [
+                {
+                    "m_KeyCode": 122,
+                    "m_Modifiers": 4
+                }
+            ]
         }
     ]
 }
