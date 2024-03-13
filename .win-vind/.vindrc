@@ -1,5 +1,0 @@
-set initmode = r
-
-rnoremap <rctrl><rctrl> <easy_click_left>
-rnoremap <rshift><rshift> <easy_click_right>
-rnoremap <ralt><ralt> <easy_click_hover>
