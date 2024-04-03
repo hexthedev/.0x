@@ -1,84 +1,66 @@
-""" source isn't working but it should be able to pull from the vimrc. I recopied underneth whats in the vimrc to maintain functionality
-source %USERPROFILE%\.vimrc
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
 
-let mapleader = " "
 
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
 
-noremap h <Nop>
-noremap j <Nop>
-noremap k <Nop>
+" Do incremental searching.
+set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+noremap H :source ~/.ideavimrc
+
+" Remap arrow keys in Normal mode
+map jk <Action>(Back)
+map jK <Action>(Forward) 
+
 noremap l <Nop>
+vnoremap l <Nop>
+onoremap l <Nop>
+
+noremap W b
+vnoremap W b
+onoremap W b
+
+noremap rr r
+vnoremap rr r
+onoremap rr r
+
+map rol /}<CR>dd?{<CR>dd^/return<CR>ciw=><Esc> 
+map rov /}<CR>dd?{<CR>ddi=> <Esc><Esc> 
+map rml /=><CR>xxi{<CR><Down>}<Esc>rf 
+
+map hk inoremap <CR>vnoremap <CR>onoremap <Esc>V<Up><Up>lc
 
 
+" Acejump 
+map <A-j> <Action>(AceAction)
+map <A-k> <Action>(AceTargetAction)
+map <A-l> <Action>(AceLineAction)
+map rf <Action>(ReformatCode)
 
-map <leader>j ^
-map <leader>k g_
+map lc <Action>(EditorAddCaretPerSelectedLine)
 
-""" Map leader to space ---------------------
-set clipboard+=unnamed
-set easymotion
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
 
-""" Keys Used a d f g h i j k l n o p r t u v x y $ { } /
-""" Windows --------------------------------
-map <leader>ww <Action>(Switcher)
-map <leader>we <Action>(ActivateProjectToolWindow)
-map <leader>wd <Action>(ActivateDebugToolWindow)
-map <leader>ws <Action>(ActivateStructureToolWindow)
-map <leader>wt <Action>(ActivateTerminalToolWindow)
-map <leader>wb <Action>(ViewBreakpoints)
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
 
-map <leader>dC <Action>(editRunConfigurations)
-map <leader>dc <Action>(RunConfiguration)
-map <leader>dr <Action>(Resume)
-map <leader>ds <Action>(Stop)
-map <leader>dp <Action>(Run)
-map <leader>dd <Action>(Debug)
-map <leader>di <Action>(NavigateToImmediateWindow)
-
-map <leader>xv <Action>(ExtractVariable)
-map <leader>xc <Action>(ExtractConstant)
-map <leader>xf <Action>(ExtractField)
-map <leader>xp <Action>(ExtractParameter)
-map <leader>xm <Action>(ExtractMethod)
-map <leader>xi <Action>(ExtractInterface)
-map <leader>xs <Action>(ExtractSuperclass)
-
-map <leader>as <Action>(SelectIn)
-map <leader>ad <Action>(GotoDeclaration)
-map <leader>ai <Action>(GotoImplementation)
-map <leader>au <Action>(FindUsages)
-map <leader>ar <Action>(GotoRelated)
-map <leader>ap <Action>(RdExposingApiesNavigationAction)
-map <leader>ac <Action>(RdConsumingApiesNavigationAction)
-map <leader>aw <Action>(RevealIn)
-map <leader>aa <Action>(ShowIntentionActions)
-
-:echo &ide
-if &ide =~? 'rider'
-  map <leader>e <Action>(ReSharperGotoNextErrorInSolution)
-  map <leader>E <Action>(ReSharperGotoPreviousErrorInSolution)
-elseif &ide =~? 'webstorm'
-  map <leader>e <Action>(GotoNextError)
-  map <leader>E <Action>(GotoPreviousError)
-endif
-
-map m <Action>(MethodDown)
-map M <Action>(MethodUp)
-
-map <leader>q <Action>(CloseContent)
-
-map <leader>[ <Action>(CollapseRegion)
-map <leader>] <Action>(ExpandRegion)
-
-map <leader>b <Action>(ToggleLineBreakpoint)
-map <leader>B <Action>(EditBreakpoint)
-
-map <leader>f <Action>(Find) 
-map <leader>F <Action>(FindInPath)
-
-map <leader>h <Action>(Replace)
-map <leader>H <Action>(ReplaceInPath)
-
-map <leader>p <Action>(NextDiff)
-map <leader>P <Action>(PreviousDiff)
-
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
