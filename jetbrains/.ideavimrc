@@ -13,26 +13,9 @@ set scrolloff=5
 " Do incremental searching.
 set incsearch
 
-" Don't use Ex mode, use Q for formatting.
-" map Q gq
-
-" ctrl d scroll half down
 " c cut and insert
-" s cut and insert character
 " y copy
 " p paste
-" u undo (U undo all), ctrl u scroll half up
-" r replace (ctrl+r undo last), R multireplace
-" . repeat last change
-" f find next occurence, F back
-" t find next one before, T back
-" ; repeat find
-" , repeat find backwards
-" w move little word, W move big word
-" b move back littleWord, B move back big word
-" e end of current work, E end of current big word
-" ( back a sentence
-" ) forward a sentence
 " { back a para
 " } forward a para
 " G end of file, gg start of file, % matching bracet
@@ -50,8 +33,10 @@ Plug 'machakann/vim-highlightedyank'
 " Commentary plugin
 Plug 'tpope/vim-commentary'
 
+" Reload .ideavimrc
 noremap H :source ~/.ideavimrc
 
+" Use normal human copy paste controls
 noremap <D-c> "+y
 noremap <D-v> "+p
 noremap <D-x> "+d
@@ -60,7 +45,10 @@ inoremap <D-c> <Esc>"+y
 inoremap <D-v> <Esc>"+p
 inoremap <D-x> <Esc>"+d
 
-" Remap basic navigation to more sensible chords
+" Modes
+noremap I a
+
+" navigation
 noremap le gg
 noremap ld G
 noremap ls ^
@@ -69,22 +57,42 @@ noremap lf $
 noremap lF g_
 noremap lj J
 noremap ln o
-noremap lN O
 
-" Remap arrow keys in Normal mode
+noremap ff /
+noremap fF ?
 
-noremap rol /}<CR>dd?{<CR>dd^/return<CR>ciw=><Esc> 
+noremap D <C-d>
+noremap E <C-u>
+
+" deletion
+noremap dl dd
+noremap df D
+noremap dr r
+noremap dc x
+
+" repetition
+noremap K n
+noremap k ;
+
+noremap a n
+noremap A N
+
+" Special Functions
+noremap rol /}<CR>dd?{<CR>dd^/return<CR>ciw=><Esc>l
 noremap rov /}<CR>dd?{<CR>ddi=> <Esc><Esc> 
 noremap rml /=><CR>xxi{<CR><Down>}<Esc>rf 
-
 noremap hk inoremap <CR>vnoremap <CR>onoremap <Esc>V<Up><Up>lc
+
+
+
+
 
 
 " RIDER ACTIONS ----------
 
 " Cursor Jumping
-noremap jK <Action>(Forward) 
-noremap jk <Action>(Back)
+map jK <Action>(Forward) 
+map jk <Action>(Back)
 
 map jf <Action>(AceAction)
 map jv <Action>(AceTargetAction)
@@ -92,10 +100,7 @@ map jl <Action>(AceLineAction)
 
 map rf <Action>(ReformatCode)
 
-" Advanced insertion
-noremap dd d
-noremap dl dd
-noremap df D
+
 
 
 " Windows
