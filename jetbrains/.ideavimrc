@@ -45,6 +45,11 @@ inoremap <D-c> <Esc>"+y
 inoremap <D-v> <Esc>"+p
 inoremap <D-x> <Esc>"+d
 
+noremap \ <Esc>
+inoremap \ <Esc>
+noremap <Esc> \
+inoremap <Esc> \
+
 " Modes
 noremap I a
 
@@ -72,8 +77,7 @@ noremap dc x
 
 " repetition
 noremap K n
-noremap k ;
-
+noremap k ; 
 noremap a n
 noremap A N
 
