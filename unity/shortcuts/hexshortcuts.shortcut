@@ -4,148 +4,6 @@
     "m_Entries": [
         {
             "identifier": {
-                "path": "Scene View/Temporary FPS Tool"
-            },
-            "combinations": []
-        },
-        {
-            "identifier": {
-                "path": "Scene View/Temporary Pan Tool 1"
-            },
-            "combinations": []
-        },
-        {
-            "identifier": {
-                "path": "Scene View/Temporary Pan Tool for 2D Mode"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 325,
-                    "m_Modifiers": 0
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Scene View/Temporary Zoom Tool 1"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 325,
-                    "m_Modifiers": 2
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Scene View/Temporary Pan Tool 2"
-            },
-            "combinations": []
-        },
-        {
-            "identifier": {
-                "path": "Scene View/Temporary Pan Tool 3"
-            },
-            "combinations": []
-        },
-        {
-            "identifier": {
-                "path": "Scene View/Temporary Orbit Tool"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 325,
-                    "m_Modifiers": 0
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Edit/Step"
-            },
-            "combinations": []
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Window/Layouts/Delete Layout/package-manager"
-            },
-            "combinations": []
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Window/Layouts/Delete Layout/landing"
-            },
-            "combinations": []
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Window/Layouts/landing"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 109,
-                    "m_Modifiers": 3
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Window/Layouts/package-manager"
-            },
-            "combinations": []
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Window/Layouts/muse-texture"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 116,
-                    "m_Modifiers": 3
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Window/Layouts/layouts"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 108,
-                    "m_Modifiers": 3
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Window/Layouts/main"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 109,
-                    "m_Modifiers": 3
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/GameObject/Toggle Active State"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 101,
-                    "m_Modifiers": 2
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Edit/Deselect All"
-            },
-            "combinations": []
-        },
-        {
-            "identifier": {
                 "path": "Main Menu/Window/Layouts/Default"
             },
             "combinations": [
@@ -154,12 +12,6 @@
                     "m_Modifiers": 4
                 }
             ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Window/Layouts/Delete Layout/Shortcuts"
-            },
-            "combinations": []
         },
         {
             "identifier": {
@@ -185,107 +37,12 @@
         },
         {
             "identifier": {
-                "path": "Main Menu/Window/Layouts/Save Layout..."
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 108,
-                    "m_Modifiers": 4
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Window/Layouts/Save Layout to File..."
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 108,
-                    "m_Modifiers": 6
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Assets/Generate Lighting"
-            },
-            "combinations": []
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Edit/Project Settings..."
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 44,
-                    "m_Modifiers": 2
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Edit/Delete"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 8,
-                    "m_Modifiers": 0
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Edit/Select Children"
-            },
-            "combinations": []
-        },
-        {
-            "identifier": {
                 "path": "Main Menu/Window/Layouts/Scene"
             },
             "combinations": [
                 {
                     "m_KeyCode": 99,
                     "m_Modifiers": 4
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/File/New Scene"
-            },
-            "combinations": []
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/GameObject/Create Empty"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 110,
-                    "m_Modifiers": 2
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/GameObject/Create Empty Child"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 110,
-                    "m_Modifiers": 6
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/GameObject/Create Empty Parent"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 110,
-                    "m_Modifiers": 3
                 }
             ]
         },
@@ -324,95 +81,11 @@
         },
         {
             "identifier": {
-                "path": "Scene Picking/Toggle Picking On Selection And Descendants"
-            },
-            "combinations": []
-        },
-        {
-            "identifier": {
-                "path": "Sprite Editor/Trim"
-            },
-            "combinations": []
-        },
-        {
-            "identifier": {
                 "path": "Main Menu/Window/Layouts/TestRunner"
             },
             "combinations": [
                 {
                     "m_KeyCode": 116,
-                    "m_Modifiers": 4
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Ergonomics/SpaceMouse/Operation/Fly"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 96,
-                    "m_Modifiers": 1
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Ergonomics/SpaceMouse/Operation/GrabMove"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 54,
-                    "m_Modifiers": 5
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Ergonomics/SpaceMouse/Operation/Orbit"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 96,
-                    "m_Modifiers": 5
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Ergonomics/SpaceMouse/Operation/Telekinesis"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 92,
-                    "m_Modifiers": 1
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Edit/Selection/Load Selection 3"
-            },
-            "combinations": []
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Ergonomics/SpaceMouse/Speed/Cycle"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 51,
-                    "m_Modifiers": 6
-                }
-            ]
-        },
-        {
-            "identifier": {
-                "path": "Main Menu/Window/Layouts/BuildProfiles"
-            },
-            "combinations": [
-                {
-                    "m_KeyCode": 98,
                     "m_Modifiers": 4
                 }
             ]

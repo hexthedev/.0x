@@ -32,9 +32,9 @@ case "$1" in
     update $unityLayoutDir $hexLayoutDir $unityShortcutsDir $hexShortcutsDir
     ;;
   --push)
-    update push
+    update $hexLayoutDir $unityLayoutDir $hexShortcutsDir $unityShortcutsDir
     ;;
   *)
-    echo "Invalid argument. Use 'pull' or 'push'."
+    echo "Failed"
     ;;
 esac
