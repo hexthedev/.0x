@@ -15,10 +15,6 @@ set incsearch
 " Don't use Ex mode, use Q for formatting.
 " map Q gq
 
-" h left
-" j down
-" k up
-" l right
 " d cut, D cut till line end (d$), ctrl d scroll half down
 " X (dh)
 " c cut and insert
@@ -28,8 +24,6 @@ set incsearch
 " u undo (U undo all), ctrl u scroll half up
 " r replace (ctrl+r undo last), R multireplace
 " . repeat last change
-" o open new line below, above
-" 0 begining of line, ^ beginning non blank, $ end of line, g_ end non blank
 " f find next occurence, F back
 " t find next one before, T back
 " ; repeat find
@@ -48,7 +42,6 @@ set incsearch
 " m[a] mark location
 " `[a] move to location
 " "[a] register actions,
-" J join line 
 
 " --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
 
@@ -63,21 +56,18 @@ noremap <D-c> "+y
 noremap <D-v> "+p
 noremap <D-x> "+d
 
+" Remap basic navigation to more sensible chords
+noremap le gg
+noremap ld G
+noremap ls ^
+noremap lS 0
+noremap lf $
+noremap lF g_
+noremap lj J
+noremap ln o
+noremap lN O
+
 " Remap arrow keys in Normal mode
-map jk <Action>(Back)
-map jK <Action>(Forward) 
-
-noremap l <Nop>
-vnoremap l <Nop>
-onoremap l <Nop>
-
-noremap W b
-vnoremap W b
-onoremap W b
-
-noremap rr r
-vnoremap rr r
-onoremap rr r
 
 map rol /}<CR>dd?{<CR>dd^/return<CR>ciw=><Esc> 
 map rov /}<CR>dd?{<CR>ddi=> <Esc><Esc> 
@@ -86,11 +76,39 @@ map rml /=><CR>xxi{<CR><Down>}<Esc>rf
 map hk inoremap <CR>vnoremap <CR>onoremap <Esc>V<Up><Up>lc
 
 
-" Acejump 
+" RIDER ACTIONS ----------
+
+" Cursor Jumping
+map jK <Action>(Forward) 
+map jk <Action>(Back)
+
 map jf <Action>(AceAction)
 map jv <Action>(AceTargetAction)
 map jl <Action>(AceLineAction)
+
 map rf <Action>(ReformatCode)
+
+" Windows
+map we <Action>(ActivateProjectToolWindow)
+map wb <Action>(ActivateBookmarksToolWindow)
+map wB <Action>(ViewBreakpoints)
+map wa <Action>(ActivateAIAssistantToolWindow)
+map wx <Action>(ActivateBuildToolWindow)
+map wd <Action>(ActivateDebugToolWindow)
+map wf <Action>(ActivateFindToolWindow)
+map wh <Action>(ActivateHierarchyToolWindow)
+map wp <Action>(ActivateProblemsViewToolWindow)
+map wl <Action>(ActivatePullRequestsToolWindow)
+map wr <Action>(ActivateRunToolWindow)
+map ws <Action>(ActivateStructureToolWindow)
+map wt <Action>(ActivateTerminalToolWindow)
+map wo <Action>(ActivateTODOToolWindow)
+map wu <Action>(ActivateUnitTestsToolWindow)
+map wg <Action>(ActivateVersionControlToolWindow) 
+ 
+map ww <Action>(Switcher)
+map wf <Action>(NextSplitter)
+map wF <Action>(PreviousSplitter)
 
 map lc <Action>(EditorAddCaretPerSelectedLine)
 
