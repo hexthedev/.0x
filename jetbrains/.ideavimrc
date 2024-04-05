@@ -13,7 +13,42 @@ set scrolloff=5
 set incsearch
 
 " Don't use Ex mode, use Q for formatting.
-map Q gq
+" map Q gq
+
+" h left
+" j down
+" k up
+" l right
+" d cut, D cut till line end (d$), ctrl d scroll half down
+" X (dh)
+" c cut and insert
+" s cut and insert character
+" y copy
+" p paste
+" u undo (U undo all), ctrl u scroll half up
+" r replace (ctrl+r undo last), R multireplace
+" . repeat last change
+" o open new line below, above
+" 0 begining of line, ^ beginning non blank, $ end of line, g_ end non blank
+" f find next occurence, F back
+" t find next one before, T back
+" ; repeat find
+" , repeat find backwards
+" w move little word, W move big word
+" b move back littleWord, B move back big word
+" e end of current work, E end of current big word
+" ( back a sentence
+" ) forward a sentence
+" { back a para
+" } forward a para
+" G end of file, gg start of file, % matching bracet
+" zz position current line to window middle
+" >> indent current line
+" = auto indent code
+" m[a] mark location
+" `[a] move to location
+" "[a] register actions,
+" J join line 
 
 " --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
 
@@ -23,6 +58,10 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
 
 noremap H :source ~/.ideavimrc
+
+noremap <D-c> "+y
+noremap <D-v> "+p
+noremap <D-x> "+d
 
 " Remap arrow keys in Normal mode
 map jk <Action>(Back)
@@ -48,9 +87,9 @@ map hk inoremap <CR>vnoremap <CR>onoremap <Esc>V<Up><Up>lc
 
 
 " Acejump 
-map <A-j> <Action>(AceAction)
-map <A-k> <Action>(AceTargetAction)
-map <A-l> <Action>(AceLineAction)
+map jf <Action>(AceAction)
+map jv <Action>(AceTargetAction)
+map jl <Action>(AceLineAction)
 map rf <Action>(ReformatCode)
 
 map lc <Action>(EditorAddCaretPerSelectedLine)
