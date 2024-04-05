@@ -100,3 +100,4 @@ unity-drive
 .redhat
 source
 AMDRM_Install.log
+*.DS_Store
