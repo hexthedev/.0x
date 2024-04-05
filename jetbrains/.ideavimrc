@@ -1,4 +1,5 @@
 " .ideavimrc is a configuration file for IdeaVim plugin. It uses
+
 "   the same commands as the original .vimrc configuration.
 " You can find a list of commands here: https://jb.gg/h38q75
 " Find more examples here: https://jb.gg/share-ideavimrc
@@ -15,8 +16,7 @@ set incsearch
 " Don't use Ex mode, use Q for formatting.
 " map Q gq
 
-" d cut, D cut till line end (d$), ctrl d scroll half down
-" X (dh)
+" ctrl d scroll half down
 " c cut and insert
 " s cut and insert character
 " y copy
@@ -56,6 +56,10 @@ noremap <D-c> "+y
 noremap <D-v> "+p
 noremap <D-x> "+d
 
+inoremap <D-c> <Esc>"+y
+inoremap <D-v> <Esc>"+p
+inoremap <D-x> <Esc>"+d
+
 " Remap basic navigation to more sensible chords
 noremap le gg
 noremap ld G
@@ -69,24 +73,30 @@ noremap lN O
 
 " Remap arrow keys in Normal mode
 
-map rol /}<CR>dd?{<CR>dd^/return<CR>ciw=><Esc> 
-map rov /}<CR>dd?{<CR>ddi=> <Esc><Esc> 
-map rml /=><CR>xxi{<CR><Down>}<Esc>rf 
+noremap rol /}<CR>dd?{<CR>dd^/return<CR>ciw=><Esc> 
+noremap rov /}<CR>dd?{<CR>ddi=> <Esc><Esc> 
+noremap rml /=><CR>xxi{<CR><Down>}<Esc>rf 
 
-map hk inoremap <CR>vnoremap <CR>onoremap <Esc>V<Up><Up>lc
+noremap hk inoremap <CR>vnoremap <CR>onoremap <Esc>V<Up><Up>lc
 
 
 " RIDER ACTIONS ----------
 
 " Cursor Jumping
-map jK <Action>(Forward) 
-map jk <Action>(Back)
+noremap jK <Action>(Forward) 
+noremap jk <Action>(Back)
 
 map jf <Action>(AceAction)
 map jv <Action>(AceTargetAction)
 map jl <Action>(AceLineAction)
 
 map rf <Action>(ReformatCode)
+
+" Advanced insertion
+noremap dd d
+noremap dl dd
+noremap df D
+
 
 " Windows
 map we <Action>(ActivateProjectToolWindow)
