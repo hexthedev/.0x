@@ -45,13 +45,18 @@ inoremap <D-c> <Esc>"+y
 inoremap <D-v> <Esc>"+p
 inoremap <D-x> <Esc>"+d
 
-noremap \ <Esc>
-inoremap \ <Esc>
-noremap <Esc> \
-inoremap <Esc> \
+noremap <D-i> <Esc>
+inoremap <D-i> <Esc>
+vnoremap <D-i> <Esc>
+
+noremap <D-e> <Up>
+noremap <D-s> <Left>
+noremap <D-d> <Down>
+noremap <D-f> <Right>
 
 " Modes
-noremap I a
+noremap i a
+noremap I i
 
 " navigation
 noremap le gg
@@ -63,8 +68,8 @@ noremap lF g_
 noremap lj J
 noremap ln o
 
-noremap ff /
-noremap fF ?
+noremap gg /
+noremap gG ?
 
 noremap D <C-d>
 noremap E <C-u>
@@ -87,25 +92,39 @@ noremap rov /}<CR>dd?{<CR>ddi=> <Esc><Esc>
 noremap rml /=><CR>xxi{<CR><Down>}<Esc>rf 
 noremap hk inoremap <CR>vnoremap <CR>onoremap <Esc>V<Up><Up>lc
 
-
-
-
-
-
 " RIDER ACTIONS ----------
 
 " Cursor Jumping
 map jK <Action>(Forward) 
 map jk <Action>(Back)
 
-map jf <Action>(AceAction)
-map jv <Action>(AceTargetAction)
-map jl <Action>(AceLineAction)
+map <D-j> /
+map <D-k> <Action>(AceTargetAction)
+map <D-l> :
 
+" Navigation
+map gd <Action>(GotoDeclaration)
+map ge <Action>(GotoNextError)
+
+map fe <Action>(SearchEverywhere)
+
+" Refactoring
 map rf <Action>(ReformatCode)
+map rn <Action>(RenameElement)
+map rr <Action>(Refactorings.QuickListPopupAction)
 
+" Editor Management
+map qo <Action>(CloseAllEditorsButActive)
 
+" Misc
+map jj <Action>(ShowIntentionActions)
 
+" Annotation
+map al <Action>(ToggleLineBreakpoint)
+
+" Execution
+map xd <Action>(ChooseDebugConfiguration)
+map xr <Action>(ChooseRunConfiguration)
 
 " Windows
 map we <Action>(ActivateProjectToolWindow)
