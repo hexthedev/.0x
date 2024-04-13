@@ -49,6 +49,11 @@ noremap <D-i> <Esc>
 inoremap <D-i> <Esc>
 vnoremap <D-i> <Esc>
 
+inoremap <D-e> <Up>
+inoremap <D-s> <Left>
+inoremap <D-d> <Down>
+inoremap <D-f> <Right>
+
 noremap <D-e> <Up>
 noremap <D-s> <Left>
 noremap <D-d> <Down>
@@ -57,6 +62,8 @@ noremap <D-f> <Right>
 " Modes
 noremap i a
 noremap I i
+
+noremap sl V
 
 " navigation
 noremap le gg
@@ -70,6 +77,9 @@ noremap ln o
 
 noremap gg /
 noremap gG ?
+
+map ft /
+map fl :
 
 noremap D <C-d>
 noremap E <C-u>
@@ -98,9 +108,7 @@ noremap hk inoremap <CR>vnoremap <CR>onoremap <Esc>V<Up><Up>lc
 map jK <Action>(Forward) 
 map jk <Action>(Back)
 
-map <D-j> /
 map <D-k> <Action>(AceTargetAction)
-map <D-l> :
 
 " Navigation
 map gd <Action>(GotoDeclaration)
