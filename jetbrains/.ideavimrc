@@ -45,10 +45,16 @@ inoremap <D-c> <Esc>"+y
 inoremap <D-v> <Esc>"+p
 inoremap <D-x> <Esc>"+d
 
-noremap <D-i> <Esc>
-inoremap <D-i> <Esc>
-vnoremap <D-i> <Esc>
+" Insert Mode control
+noremap A i
+vnoremap A i
+inoremap A A
 
+noremap <D-a> <Esc>
+inoremap <D-a> <Esc>
+vnoremap <D-a> <Esc>
+
+" Arrow Controls
 inoremap <D-e> <Up>
 inoremap <D-s> <Left>
 inoremap <D-d> <Down>
@@ -58,6 +64,16 @@ noremap <D-e> <Up>
 noremap <D-s> <Left>
 noremap <D-d> <Down>
 noremap <D-f> <Right>
+
+inoremap <D-i> <Up>
+inoremap <D-j> <Left>
+inoremap <D-k> <Down>
+inoremap <D-l> <Right>
+
+noremap <D-i> <Up>
+noremap <D-j> <Left>
+noremap <D-k> <Down>
+noremap <D-l> <Right>
 
 " Modes
 noremap i a
@@ -93,8 +109,6 @@ noremap dc x
 " repetition
 noremap K n
 noremap k ; 
-noremap a n
-noremap A N
 
 " Special Functions
 noremap rol /}<CR>dd?{<CR>dd^/return<CR>ciw=><Esc>l
@@ -108,7 +122,10 @@ noremap hk inoremap <CR>vnoremap <CR>onoremap <Esc>V<Up><Up>lc
 map jK <Action>(Forward) 
 map jk <Action>(Back)
 
-map <D-k> <Action>(AceTargetAction)
+map jc <Action>(AceWordAction)
+map js <Action>(AceTargetAction)
+map jl <Action>(AceLineAction)
+map jd <Action>(AceDeclarationAction)
 
 " Navigation
 map gd <Action>(GotoDeclaration)
@@ -128,7 +145,6 @@ map qo <Action>(CloseAllEditorsButActive)
 map jj <Action>(ShowIntentionActions)
 
 " Annotation
-map al <Action>(ToggleLineBreakpoint)
 
 " Execution
 map xd <Action>(ChooseDebugConfiguration)
