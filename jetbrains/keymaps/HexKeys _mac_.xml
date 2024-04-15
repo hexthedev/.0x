@@ -20,25 +20,49 @@
   <action id="AceAction" />
   <action id="AceLineAction" />
   <action id="AceTargetAction" />
-  <action id="ActivateBookmarksToolWindow" />
+  <action id="ActivateBookmarksToolWindow">
+    <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta a" />
+  </action>
+  <action id="ActivateBuildToolWindow">
+    <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta x" />
+  </action>
   <action id="ActivateCommitToolWindow" />
-  <action id="ActivateDebugToolWindow" />
-  <action id="ActivateFindToolWindow" />
+  <action id="ActivateDebugToolWindow">
+    <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta d" />
+  </action>
+  <action id="ActivateFindToolWindow">
+    <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta f" />
+  </action>
+  <action id="ActivateHierarchyToolWindow">
+    <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta h" />
+  </action>
   <action id="ActivateInspectionResultsToolWindow">
     <keyboard-shortcut first-keystroke="meta w" second-keystroke="i" />
   </action>
   <action id="ActivateNuGetToolWindow" />
-  <action id="ActivateProblemsViewToolWindow" />
-  <action id="ActivateProjectToolWindow" />
+  <action id="ActivateProblemsViewToolWindow">
+    <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta p" />
+  </action>
+  <action id="ActivateProjectToolWindow">
+    <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta e" />
+  </action>
   <action id="ActivateRunToolWindow" />
   <action id="ActivateServicesToolWindow" />
-  <action id="ActivateStructureToolWindow" />
-  <action id="ActivateTerminalToolWindow" />
-  <action id="ActivateUnitTestsToolWindow" />
+  <action id="ActivateStructureToolWindow">
+    <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta s" />
+  </action>
+  <action id="ActivateTerminalToolWindow">
+    <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta t" />
+  </action>
+  <action id="ActivateUnitTestsToolWindow">
+    <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta u" />
+  </action>
   <action id="ActivateVersionControlToolWindow" />
   <action id="AssemblyDiffAction" />
   <action id="AutoIndentLines" />
-  <action id="Back" />
+  <action id="Back">
+    <keyboard-shortcut first-keystroke="meta j" second-keystroke="meta k" />
+  </action>
   <action id="BookmarksView.Rename" />
   <action id="BuildCurrentProject">
     <keyboard-shortcut first-keystroke="meta x" second-keystroke="b" />
@@ -173,10 +197,6 @@
     <keyboard-shortcut first-keystroke="meta r" second-keystroke="i" />
   </action>
   <action id="EditorJoinLines" />
-  <action id="EditorLeft">
-    <keyboard-shortcut first-keystroke="left" />
-    <keyboard-shortcut first-keystroke="meta s" />
-  </action>
   <action id="EditorMatchBrace">
     <keyboard-shortcut first-keystroke="meta g" second-keystroke="b" />
   </action>
@@ -194,10 +214,6 @@
     <keyboard-shortcut first-keystroke="meta m" second-keystroke="shift w" />
   </action>
   <action id="EditorPreviousWordWithSelection" />
-  <action id="EditorRight">
-    <keyboard-shortcut first-keystroke="right" />
-    <keyboard-shortcut first-keystroke="meta f" />
-  </action>
   <action id="EditorScrollBottom">
     <keyboard-shortcut first-keystroke="meta page_down" />
   </action>
@@ -206,6 +222,9 @@
     <keyboard-shortcut first-keystroke="meta page_up" />
   </action>
   <action id="EditorSelectLine" />
+  <action id="EditorSelectSingleLineAtCaret">
+    <keyboard-shortcut first-keystroke="meta s" second-keystroke="l" />
+  </action>
   <action id="EditorSelectWord">
     <keyboard-shortcut first-keystroke="meta p" />
   </action>
@@ -254,7 +273,9 @@
   </action>
   <action id="FileChooser.NewFolder" />
   <action id="FileStructurePopup" />
-  <action id="Find" />
+  <action id="Find">
+    <keyboard-shortcut first-keystroke="meta f" second-keystroke="meta t" />
+  </action>
   <action id="FindInPath" />
   <action id="FindNext">
     <keyboard-shortcut first-keystroke="meta g" second-keystroke="o" />
@@ -278,7 +299,9 @@
   <action id="ForceStepOver">
     <keyboard-shortcut first-keystroke="shift f3" />
   </action>
-  <action id="Forward" />
+  <action id="Forward">
+    <keyboard-shortcut first-keystroke="meta j" second-keystroke="shift meta k" />
+  </action>
   <action id="Generate">
     <keyboard-shortcut first-keystroke="meta r" second-keystroke="g" />
   </action>
@@ -314,6 +337,9 @@
   <action id="GotoTypeDeclaration" />
   <action id="GotoUrlAction" />
   <action id="Graph.RouteEdges" />
+  <action id="HTTPClient.PreviewHtml.NavigateBack">
+    <keyboard-shortcut first-keystroke="left" />
+  </action>
   <action id="Help.KeymapReference" />
   <action id="HideActiveWindow" />
   <action id="HideAllWindows">
@@ -335,9 +361,16 @@
   </action>
   <action id="JumpToLastChange" />
   <action id="JumpToStatement" />
-  <action id="MaximizeToolWindow">
-    <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta x" />
+  <action id="List-selectPreviousColumn">
+    <keyboard-shortcut first-keystroke="left" />
   </action>
+  <action id="Macro.test">
+    <keyboard-shortcut first-keystroke="meta m" second-keystroke="meta m" />
+  </action>
+  <action id="Macro.testagain">
+    <keyboard-shortcut first-keystroke="meta m" second-keystroke="meta b" />
+  </action>
+  <action id="MaximizeToolWindow" />
   <action id="MethodDown">
     <keyboard-shortcut first-keystroke="meta g" second-keystroke="m" />
   </action>
@@ -355,6 +388,9 @@
   </action>
   <action id="NavBar-cancel">
     <keyboard-shortcut first-keystroke="escape" />
+  </action>
+  <action id="NavBar-selectLeft">
+    <keyboard-shortcut first-keystroke="left" />
   </action>
   <action id="NewElement">
     <keyboard-shortcut first-keystroke="meta n" second-keystroke="n" />
@@ -479,6 +515,9 @@
   <action id="ScrollPane-unitScrollUp" />
   <action id="SearchEverywhere" />
   <action id="SearchEverywhere.PrevTab" />
+  <action id="SegmentedButton-left">
+    <keyboard-shortcut first-keystroke="left" />
+  </action>
   <action id="SelectAllOccurrences" />
   <action id="SelectIn" />
   <action id="SelectNextOccurrence" />
@@ -506,6 +545,9 @@
   <action id="Space.Review.CreateDiffComment" />
   <action id="SpeedSearch" />
   <action id="SplitChooser.PreviousWindow" />
+  <action id="SplitChooser.SplitLeft">
+    <keyboard-shortcut first-keystroke="left" />
+  </action>
   <action id="SplitVertically" />
   <action id="StepInto" />
   <action id="StepOut">
@@ -550,6 +592,9 @@
   <action id="ToggleFindInSelection" />
   <action id="ToggleLineBreakpoint" />
   <action id="ToggleTemporaryLineBreakpoint" />
+  <action id="Tree-selectParent">
+    <keyboard-shortcut first-keystroke="left" />
+  </action>
   <action id="Tree-startEditing" />
   <action id="TypeHierarchy">
     <keyboard-shortcut first-keystroke="meta h" second-keystroke="t" />
