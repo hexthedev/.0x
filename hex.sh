@@ -3,7 +3,7 @@
 hexDir=~/repos/.0x
 hexLayoutDir=$hexDir/unity/layouts
 hexShortcutsDir=$hexDir/unity/shortcuts
-hexIdeaVimRCPath=$hexDir/jetbrains/.ideavimrc
+hexJetbrainsKeymapsDir=$hexDir/jetbrains/keymaps
 hexZshRcPath=$hexDir/.zshrc
 
 unityLayoutDir=~/Library/Preferences/Unity/Editor-5.x/Layouts/default
@@ -11,6 +11,9 @@ unityShortcutsDir=~/Library/Preferences/Unity/Editor-5.x/shortcuts/default
 
 systemIdeaVimRCPath=~/.ideavimrc
 systemZshRcPath=~/.zshrc
+
+jetbrainsRiderKeys='/Users/james.mccafferty/Library/Application Support/JetBrains/Rider2024.1/keymaps'
+jetbrainsPycharmKeys='/Users/james.mccafferty/Library/Application Support/JetBrains/PyCharm2024.1/keymaps'
 
 performUpdate() {
   what=$1
@@ -26,13 +29,14 @@ case "$1" in
   --pull)
     performUpdate "Unity Layouts" $unityLayoutDir $hexLayoutDir
     performUpdate "Unity Shortcuts" $unityShortcutsDir $hexShortcutsDir
-    performUpdate ".ideavimrc" $systemIdeaVimRCPath $hexIdeaVimRCPath
+    performUpdate "Jetbrains Keymaps" $jetbrainsRiderKeys $hexJetbrainsKeymapsDir
     performUpdate ".zshrc" $systemZshRcPath $hexZshRcPath
     ;;
   --push)
     performUpdate "Unity Layouts" $hexLayoutDir $unityLayoutDir
     performUpdate "Unity Shortcuts" $hexShortcutsDir $unityShortcutsDir
-    performUpdate ".ideavimrc" $hexIdeaVimRCPath $systemIdeaVimRCPath
+    performUpdate "Jetbrains Keymaps (Rider)" $hexJetbrainsKeymapsDir $jetbrainsRiderKeys
+    performUpdate "Jetbrains Keymaps (Pycharm)" $hexJetbrainsKeymapsDir $jetbrainsPycharmKeys
     performUpdate ".zshrc" $hexZshRcPath $systemZshRcPath
     ;;
   *)
