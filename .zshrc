@@ -100,5 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+#
 alias xpull='~/repos/.0x/hex.sh --pull'
 alias xpush='~/repos/.0x/hex.sh --push'
+
+source ~/.zshrc_local
