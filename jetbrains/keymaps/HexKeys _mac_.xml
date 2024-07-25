@@ -5,6 +5,10 @@
   <action id="$Cut">
     <keyboard-shortcut first-keystroke="shift meta c" />
   </action>
+  <action id="$Delete">
+    <keyboard-shortcut first-keystroke="delete" />
+    <keyboard-shortcut first-keystroke="meta back_space" />
+  </action>
   <action id="$Paste">
     <keyboard-shortcut first-keystroke="meta v" />
   </action>
@@ -159,6 +163,9 @@
   <action id="Editor Cut">
     <keyboard-shortcut first-keystroke="shift meta c" />
   </action>
+  <action id="Editor Delete">
+    <keyboard-shortcut first-keystroke="meta back_space" />
+  </action>
   <action id="Editor Paste">
     <keyboard-shortcut first-keystroke="meta v" />
   </action>
@@ -196,6 +203,10 @@
   </action>
   <action id="EditorDecreaseFontSize" />
   <action id="EditorDecreaseFontSizeGlobal" />
+  <action id="EditorDelete">
+    <keyboard-shortcut first-keystroke="delete" />
+    <keyboard-shortcut first-keystroke="meta back_space" />
+  </action>
   <action id="EditorDeleteLine">
     <keyboard-shortcut first-keystroke="meta d" second-keystroke="meta l" />
   </action>
