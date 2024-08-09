@@ -545,7 +545,9 @@
     <keyboard-shortcut first-keystroke="meta r" second-keystroke="n" />
   </action>
   <action id="Replace" />
-  <action id="ReplaceInPath" />
+  <action id="ReplaceInPath">
+    <keyboard-shortcut first-keystroke="meta f" second-keystroke="meta r" />
+  </action>
   <action id="Rerun">
     <keyboard-shortcut first-keystroke="shift f6" />
   </action>
