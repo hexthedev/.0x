@@ -17,7 +17,7 @@
       "command": "workbench.action.problems.focus"
     },
     {
-      "key": "ctrl+w ctrl+e",
+      "key": "cmd+w cmd+e",
       "command": "workbench.view.explorer"
     },
     {
@@ -33,7 +33,7 @@
     { "key": "ctrl+b ctrl+s", "command": "workbench.action.tasks.build" },
     { "key": "ctrl+h ctrl+c", "command": "editor.action.callHierarchy" },
     {
-      "key": "ctrl+q ctrl+a",
+      "key": "cmd+w cmd+w",
       "command": "workbench.action.closeAllEditors"
     },
     {
@@ -1626,5 +1626,15 @@
       "key": "z",
       "command": "-undo",
       "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
+    },
+    {
+      "key": "cmd+w cmd+e",
+      "command": "workbench.view.explorer",
+      "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+      "key": "shift+cmd+e",
+      "command": "-workbench.view.explorer",
+      "when": "viewContainer.workbench.view.explorer.enabled"
     }
   ]
