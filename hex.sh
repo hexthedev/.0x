@@ -43,6 +43,6 @@ case "$1" in
     performUpdate ".zshrc" $rc $sys_rc
     ;;
   *)
-    echo "Failed"
+    echo "Use --pull to pull from system, or --push to push to system"
     ;;
 esac
