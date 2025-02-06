@@ -1,11 +1,16 @@
 {
   "waitForEnterForFilteredHints": false,
-  "keyMappings": "map <A-j> LinkHints.activateMode\n#map <C-j> LinkHints.activateModeToOpenInNewForegroundTab\n#map <C-j>l LinkHints.activateModeToCopyLinkUrl\nmap <C-m><C-f> nextTab\nmap <C-m><C-s> previousTab\nmap <C-h><C-j> goBack\nmap <C-h><C-h> goForward\n\nunmap <Escape>",
+  "keyMappings": "unmap j\nunmap k\nunmap x\nunmap X\nunmap f\n\nmap jw LinkHints.activateMode\nmap jf LinkHints.activateModeToOpenInNewForegroundTab\nmap jl LinkHints.activateModeToCopyLinkUrl\nmap ms nextTab\nmap mf previousTab\nmap jk goBack\nmap jK goForward\n\nmap D d\nmap E e",
   "linkHintCharacters": "fdsajklghtyrueiwoqpbnvmcxz",
   "linkHintNumbers": "fdsajklghrueiwoqptybnvmcxz",
   "newTabUrl": "https://configure.zsa.io/ergodox-ez/layouts/7qvpo/latest/0",
   "regexFindMode": true,
   "smoothScroll": false,
-  "settingsVersion": "2.0.5",
-  "exclusionRules": []
+  "settingsVersion": "2.1.2",
+  "exclusionRules": [
+    {
+      "passKeys": "",
+      "pattern": "https://vim-adventures.com/"
+    }
+  ]
 }
